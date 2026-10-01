@@ -11,7 +11,7 @@ export default function Hero() {
       className="relative flex min-h-screen items-center overflow-hidden bg-[#09090b] px-6 pt-28 text-white"
     >
       {/* Background glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet-600/10 blur-[130px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-125 w-125 -translate-x-1/2 rounded-full bg-violet-600/10 blur-[130px]" />
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.2fr_0.8fr]">
         {/* Content */}
@@ -31,7 +31,7 @@ export default function Hero() {
 
           <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
             I build software at the intersection of{" "}
-            <span className="bg-gradient-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
               healthcare & AI.
             </span>
           </h1>
@@ -68,12 +68,12 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative mx-auto hidden w-full max-w-sm lg:block"
         >
-          <div className="absolute -inset-5 rounded-[2rem] bg-violet-500/10 blur-3xl" />
+          <div className="absolute -inset-5 rounded-4xl bg-violet-500/10 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900 p-2">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
+          <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-zinc-900 p-2">
+            <div className="relative aspect-4/5 overflow-hidden rounded-3xl">
               <Image
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt="Sodiq Oloyede"
                 fill
                 priority

@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "motion/react";
-import { SiGithub, SiLinkerd } from "@icons-pack/react-simple-icons";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { LinkedinIcon } from "@/src/lib/LinkedInIcon";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -22,9 +24,17 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-black/70 px-5 py-3 backdrop-blur-xl">
         <a
           href="#home"
-          className="text-lg font-semibold tracking-tight text-white"
+          className="text-lg tracking-tight"
         >
-          SO<span className="text-violet-500">.</span>
+          <div className="">
+            <Image
+              src="/images/logo.png"
+              alt="Sodiq Oloyede"
+              width={40}
+              height={40}
+              className="object-cover"
+            />
+          </div>
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
@@ -57,7 +67,7 @@ export default function Navbar() {
             aria-label="LinkedIn"
             className="rounded-lg p-2 text-zinc-400 transition hover:bg-white/10 hover:text-white"
           >
-            <SiLinkerd size={18} />
+            <LinkedinIcon size={18} />
           </a>
 
           <a

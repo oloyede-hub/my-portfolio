@@ -1,4 +1,5 @@
-import { SiGithub, SiLinkerd } from "@icons-pack/react-simple-icons";
+import { LinkedinIcon } from "@/src/lib/LinkedInIcon";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 
 export default function Footer() {
   return (
@@ -31,13 +32,13 @@ export default function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://linkedin.com/in/oloyede-hub"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
             className="rounded-lg p-2 text-zinc-500 transition hover:bg-white/5 hover:text-white"
           >
-            <SiLinkerd size={17} />
+            <LinkedinIcon />
           </a>
         </div>
       </div>

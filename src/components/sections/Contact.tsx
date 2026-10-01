@@ -6,8 +6,9 @@ import {
 
   Mail,
 } from "lucide-react";
-import { SiGithub, SiLinkerd } from "@icons-pack/react-simple-icons";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 import SectionTitle from "../ui/SectionTitle";
+import { LinkedinIcon } from "@/src/lib/LinkedInIcon";
 
 const socials = [
   {
@@ -19,8 +20,8 @@ const socials = [
   {
     name: "LinkedIn",
     value: "Connect with me",
-    href: "#", // Replace with your LinkedIn URL
-    icon: SiLinkerd,
+    href: "https://www.linkedin.com/in/oloyedesodiq/",
+    icon: LinkedinIcon,
   },
 ];
 
@@ -50,13 +51,13 @@ export default function Contact() {
         <div className="grid gap-5 md:grid-cols-2">
           {/* Main email card */}
           <motion.a
-            href="mailto:YOUR_EMAIL@gmail.com"
+            href="mailto:sodiqoloyede295@gmail.com"
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ y: -4 }}
             transition={{ duration: 0.4 }}
-            className="group flex min-h-[230px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition-colors hover:border-violet-500/30"
+            className="group flex min-h-57.5 flex-col justify-between rounded-2xl border border-white/10 bg-white/3 p-7 transition-colors hover:border-violet-500/30"
           >
             <div className="flex items-start justify-between">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-500/10 text-violet-400">
@@ -73,7 +74,7 @@ export default function Contact() {
               <p className="text-sm text-zinc-500">Drop me an email</p>
 
               <p className="mt-2 text-xl font-medium">
-                YOUR_EMAIL@gmail.com
+                sodiqoloyede295@gmail.com
               </p>
             </div>
           </motion.a>
@@ -97,10 +98,10 @@ export default function Contact() {
                     duration: 0.4,
                     delay: index * 0.08,
                   }}
-                  className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-violet-500/30"
+                  className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/2 p-6 transition-colors hover:border-violet-500/30"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.05] text-zinc-300">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/5 text-zinc-300">
                       <Icon size={20} />
                     </div>
 
