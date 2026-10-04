@@ -52,4 +52,22 @@ export const projects = [
     live: "https://potato-disease-classifier-frontend-pfyt.onrender.com/",
     featured: false,
   },
+  {
+  title: "Anka WiFi",
+  description:
+    "A full-stack platform for digitizing prepaid Wi-Fi access sales. Customers can select internet packages, make secure payments through Paystack and receive access codes after successful payment verification. It includes an admin dashboard for managing Wi-Fi packages, access-code inventory, purchases and payment transactions.",
+  image: "/images/anka-wifi.png",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "NestJS",
+    "PostgreSQL",
+    "Prisma",
+    "Paystack",
+    "TanStack Query",
+  ],
+  github: "",
+  live: "",
+  featured: true,
+},
 ];
